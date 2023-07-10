@@ -1,0 +1,258 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: rgb(246, 138, 156);
+    text-decoration: underline;
+    transition: all 0.5s ease;
+}
+
+nav ul li:hover{
+    transform: translatey(5px);
+    transition: all 0.5s ease;
+}
+
+header{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+    margin-right: 10px;
+}
+
+nav ul li{
+    margin-right: 20px;
+}
+
+
+.hero{
+    width: 70%;
+    padding-right: 20px;
+}
+
+.hero img{
+    height: 40%;
+    width: 100%;
+}
+
+.hero-text{
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    /* width: 70%; */
+}
+
+.hero-h2{
+    width: 100%;
+    font-size: 30px;
+    text-align: left;
+}
+
+.hero-p{
+    /* float: right; */
+    width: 100%;
+}
+
+.hero-p button{
+    margin-top: 15px;
+    background-color: hsl(240, 100%, 5%);
+    color: white;
+    cursor: pointer;
+    height: 35px;
+    letter-spacing: 3px;
+    width: 150px;
+}
+
+.fake-main{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+main{
+    
+    padding: 20px;
+}
+
+.side-section{
+    padding: 20px;
+    border: 1px solid black;
+    background-color:  hsl(240, 100%, 5%);
+    width: 30%;
+    color: white;
+    height: auto;
+}
+
+
+.side-head{
+   color: hsl(35, 77%, 62%);
+}
+
+.news{
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.news h3{
+    margin-bottom: 10px;
+}
+
+.trending{
+    display: flex;
+    margin-top: 100px;
+}
+
+.trend{
+    display: flex;
+}
+
+.trend-text{
+    padding: 20px;
+}
+
+
+.trend-img img{
+    height: 50%;
+}
+
+
+.trend-rank{
+    color: hsl(233, 8%, 79%);
+    font-size: 40px
+}
+
+
+ .trend-head{
+    color: hsl(240, 100%, 5%);
+ }
+
+
+ .trend-subhead{
+    color: hsl(233, 8%, 79%);
+ }
+
+ .news h3:hover{
+    color: hsl(35, 77%, 62%);  
+    cursor: pointer;
+ }
+
+ .hero-p button:focus{
+    background-color: hsl(5, 85%, 63%) ;
+ }
+
+ .menu{
+    display: none;
+ }
+
+ .close-menu{
+    display: none;
+ }
+
+
+ @media only screen and (max-width: 769px){
+        nav ul{
+            flex-direction: column;
+            margin-left: auto;
+            margin-top: 100px;
+
+        }
+
+        nav ul li{
+            margin-bottom: 20px;
+        }
+        nav{
+            position: absolute;
+            display: none;
+            padding-left: 20px;
+            margin-left: auto;
+            background-color: white;
+            top: 0;
+            height: 100%;
+            width: 50%;
+            right: 0;
+        }
+
+        .close-menu{
+            display: block;
+        }
+
+        .hero{
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+        }
+
+        .menu{
+            display: block;
+            padding-top: 10px;
+            cursor: pointer;
+            position: relative;
+
+        }
+
+        .hero img{
+            height: 40%;
+            width: 100%;
+        }
+
+        .fake-main{
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hero-text{
+            flex-direction: column;
+            justify-content: center;
+            text-align: left;
+        }
+
+        .hero-h2 {
+            text-align: left;
+        }
+
+
+        .side-section {
+            padding: 20px;
+            margin-top: 20px;
+            width: 100%;
+            color: white;
+            height: auto;
+        }
+
+        .trending {
+            display: flex;
+            flex-direction: column;
+            margin-top: 100px;
+        }
+
+        .close-menu-con{
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+            margin-right: 22px;
+        }
+
+        .close-menu{
+            cursor: pointer;
+        }
+
+        nav ul li:hover{
+            transform: translateX(10px);
+            transition: all 0.5s ease;
+        }
+ }
